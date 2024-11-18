@@ -389,6 +389,7 @@
 "Assets/Script/PlanetClick.cs"
 "Assets/Script/RotateOnAxis.cs"
 "Assets/Script/SpaceTravel.cs"
+"Assets/Script/SpringObjectController.cs"
 "Assets/Stagit/SkyboxEarthPlanets/script/skyboxspace_demo_v1.cs"
 "Assets/Stagit/SkyboxEarthPlanets/script/skyboxspace_mouselook_v1.cs"
 "Assets/swipe_canvas.cs"
