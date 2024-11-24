@@ -3,15 +3,3 @@ sceneSetups:
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: Assets/Animated Sun Skybox/Demo/DemoScene.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Stagit/SkyboxEarthPlanets/scenes/skyboxEarthProDemo.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Stagit/SkyboxEarthPlanets/scenes/skyboxspaceFreeexample.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0

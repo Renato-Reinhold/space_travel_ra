@@ -73,12 +73,14 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\_CelestialBodies\_Scripts\StarControler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\Script\AsteroidMovement.cs" />
     <Compile Include="Assets\Free Skyboxes - Space\SBS Space 1\Large\Parallax_skybox.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Script\PlanetClick.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\Script\SpringObjectController.cs" />
     <Compile Include="Assets\Stagit\SkyboxEarthPlanets\script\skyboxspace_mouselook_v1.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -99,6 +101,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\_CelestialBodies\_Scripts\StarControlerOld.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Script\DynamicOrbitController.cs" />
     <Compile Include="Assets\Animated Sun Skybox\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
@@ -107,6 +110,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Script\OrbitAroundSun.cs" />
+    <Compile Include="Assets\Script\SpaceshipController.cs" />
+    <Compile Include="Assets\Script\AsteroidSpawner.cs" />
     <Compile Include="Assets\swipe_canvas.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
@@ -132,6 +137,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Space SFX - 102218\Notes.txt" />
     <None Include="Assets\Free Skyboxes - Space\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -1051,10 +1057,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1069,6 +1071,10 @@
     </Reference>
     <Reference Include="Unity.LiveCapture.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.LiveCapture.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
@@ -1099,8 +1105,8 @@
       <HintPath>Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    <Reference Include="Unity.LiveCapture.CompanionApp">
+      <HintPath>Library\ScriptAssemblies\Unity.LiveCapture.CompanionApp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
@@ -1111,12 +1117,20 @@
       <HintPath>Library\ScriptAssemblies\Unity.LiveCapture.Mocap.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.LiveCapture.Rendering">
       <HintPath>Library\ScriptAssemblies\Unity.LiveCapture.Rendering.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.LiveCapture.CompanionApp">
-      <HintPath>Library\ScriptAssemblies\Unity.LiveCapture.CompanionApp.dll</HintPath>
+    <Reference Include="Unity.LiveCapture.Ntp.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.LiveCapture.Ntp.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.LiveCapture.ARKitFaceCapture.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.LiveCapture.ARKitFaceCapture.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
@@ -1129,10 +1143,6 @@
     </Reference>
     <Reference Include="Unity.LiveCapture">
       <HintPath>Library\ScriptAssemblies\Unity.LiveCapture.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.LiveCapture.Ntp.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.LiveCapture.Ntp.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.LiveCapture.TransformCapture.Editor">
@@ -1165,10 +1175,6 @@
     </Reference>
     <Reference Include="Cinemachine">
       <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.LiveCapture.ARKitFaceCapture.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.LiveCapture.ARKitFaceCapture.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.LiveCapture.VideoStreaming.Server">

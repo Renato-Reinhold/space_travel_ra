@@ -63,7 +63,7 @@ public class SpringObjectController : MonoBehaviour
         {
             if (invisibleObjects[i] != null)
             {
-                float distanceToTarget = Vector3.Distance(invisibleObjects[i].position, movingTarget.position);
+                float distanceToTarget = Vector3.Distance(centralObject.position, movingTarget.position);
 
                 if (distanceToTarget > orbitDistance) 
                 {
@@ -76,6 +76,12 @@ public class SpringObjectController : MonoBehaviour
                 }
                 else
                 {
+                    if (movementAudioSource != null)
+                        movementAudioSource.Stop();
+
+                    if (movementParticleSystem != null)
+                        movementParticleSystem.Stop();
+
                     // Caso contrário, começa a orbitar
                     OrbitObject(invisibleObjects[i], movingTarget.position);
                 }

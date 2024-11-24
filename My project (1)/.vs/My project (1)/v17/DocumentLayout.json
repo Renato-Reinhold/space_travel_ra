@@ -1,18 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\renat\\My project (1)\\",
+  "WorkspaceRootPath": "C:\\Users\\renat\\Desktop\\Furb\\space_travel_ra\\My project (1)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\renat\\My project (1)\\Assets\\Script\\SpaceTravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\renat\\Desktop\\Furb\\space_travel_ra\\My project (1)\\Assets\\Script\\SpaceTravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\SpaceTravel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\renat\\My project (1)\\Assets\\Script\\PlanetUIButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\PlanetUIButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\renat\\My project (1)\\Assets\\Script\\PlanetUIButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\renat\\My project (1)\\Assets\\Script\\Parallax_skybox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Parallax_skybox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\renat\\My project (1)\\Assets\\Script\\Parallax_skybox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,9 +26,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SpaceTravel.cs",
-              "DocumentMoniker": "C:\\Users\\renat\\My project (1)\\Assets\\Script\\SpaceTravel.cs",
+              "DocumentMoniker": "C:\\Users\\renat\\Desktop\\Furb\\space_travel_ra\\My project (1)\\Assets\\Script\\SpaceTravel.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\SpaceTravel.cs",
-              "ToolTip": "C:\\Users\\renat\\My project (1)\\Assets\\Script\\SpaceTravel.cs",
+              "ToolTip": "C:\\Users\\renat\\Desktop\\Furb\\space_travel_ra\\My project (1)\\Assets\\Script\\SpaceTravel.cs",
               "RelativeToolTip": "Assets\\Script\\SpaceTravel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -42,9 +40,9 @@
               "DocumentIndex": 1,
               "Title": "PlanetUIButton.cs",
               "DocumentMoniker": "C:\\Users\\renat\\My project (1)\\Assets\\Script\\PlanetUIButton.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\PlanetUIButton.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\My project (1)\\Assets\\Script\\PlanetUIButton.cs",
               "ToolTip": "C:\\Users\\renat\\My project (1)\\Assets\\Script\\PlanetUIButton.cs",
-              "RelativeToolTip": "Assets\\Script\\PlanetUIButton.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\My project (1)\\Assets\\Script\\PlanetUIButton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T17:27:41.469Z"
@@ -54,9 +52,9 @@
               "DocumentIndex": 2,
               "Title": "Parallax_skybox.cs",
               "DocumentMoniker": "C:\\Users\\renat\\My project (1)\\Assets\\Script\\Parallax_skybox.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Parallax_skybox.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\My project (1)\\Assets\\Script\\Parallax_skybox.cs",
               "ToolTip": "C:\\Users\\renat\\My project (1)\\Assets\\Script\\Parallax_skybox.cs",
-              "RelativeToolTip": "Assets\\Script\\Parallax_skybox.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\My project (1)\\Assets\\Script\\Parallax_skybox.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T02:40:13.219Z"
             }
